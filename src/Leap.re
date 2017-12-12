@@ -11,6 +11,8 @@ let isLeapYear = (year: int) : bool => {
   isDivisibleBy4 && (isDivisibleBy100 === false || isDivisibleBy400)
 };
 
+/* Tests
+ */
 Js.log("Year not divisible by 4: common year");
 
 Js.log(isLeapYear(2015) === false ? "Passed" : "Failed");

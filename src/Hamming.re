@@ -13,6 +13,8 @@ let hammingDistance = (strand1: string, strand2: string) : int => {
   )
 };
 
+/* Tests
+ */
 Js.log("small distance");
 
 Js.log(hammingDistance("GGACG", "GGTCG") === 1 ? "Passed" : "Failed");
