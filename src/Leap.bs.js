@@ -17,5 +17,29 @@ function isLeapYear(year) {
   }
 }
 
+console.log("Year not divisible by 4: common year");
+
+var match = +(isLeapYear(2015) === /* false */0);
+
+console.log(match !== 0 ? "Passed" : "Failed");
+
+console.log("Year divisible by 4, not divisible by 100: leap year");
+
+var match$1 = +(isLeapYear(1996) === /* true */1);
+
+console.log(match$1 !== 0 ? "Passed" : "Failed");
+
+console.log("Year divisible by 100, not divisible by 400: common year");
+
+var match$2 = +(isLeapYear(2100) === /* false */0);
+
+console.log(match$2 !== 0 ? "Passed" : "Failed");
+
+console.log("Year divisible by 400: leap year");
+
+var match$3 = +(isLeapYear(2000) === /* true */1);
+
+console.log(match$3 !== 0 ? "Passed" : "Failed");
+
 exports.isLeapYear = isLeapYear;
-/* No side effect */
+/*  Not a pure module */
