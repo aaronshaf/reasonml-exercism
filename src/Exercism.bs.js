@@ -22,6 +22,10 @@ function factorsOfNumber(max) {
                 }))(range(1, max + 1 | 0));
 }
 
-exports.range           = range;
-exports.factorsOfNumber = factorsOfNumber;
+var Utils = /* module */[
+  /* range */range,
+  /* factorsOfNumber */factorsOfNumber
+];
+
+exports.Utils = Utils;
 /* No side effect */

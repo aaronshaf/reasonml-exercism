@@ -1,5 +1,5 @@
 let raindrops = (number: int) : string => {
-  let factors = MyUtils.factorsOfNumber(number);
+  let factors = Exercism.Utils.factorsOfNumber(number);
   let raindropSpeak = ref("");
   if (List.mem(3, factors)) {
     raindropSpeak := raindropSpeak^ ++ "Pling"
