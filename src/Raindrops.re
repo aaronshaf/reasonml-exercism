@@ -1,3 +1,6 @@
+/* http://exercism.io/exercises/ocaml/raindrops/readme
+   Convert a number to a string, the contents of which depend on the number's factors.
+    */
 let raindrops = (number: int) : string => {
   let factors = Exercism.Utils.factorsOfNumber(number);
   let raindropSpeak = ref("");

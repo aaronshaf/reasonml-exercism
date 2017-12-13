@@ -1,4 +1,6 @@
-/* http://exercism.io/exercises/ocaml/hamming/readme */
+/* http://exercism.io/exercises/ocaml/hamming/readme
+   Calculate the Hamming difference between two DNA strands.
+   */
 let stringToListOfChars = (str: string) : list(char) =>
   Array.init(String.length(str), (i) => str.[i]) |> Array.to_list;
 
